@@ -6,3 +6,8 @@
   --color-secondary: #cad2c5;
   --color-accent: #84a98c;
 }
+
+
+body{
+  scroll-behavior: smooth;
+}
