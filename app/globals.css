@@ -1,16 +1,22 @@
 @import "tailwindcss";
 
-
 :root {
   --color-primary: #111827;
   --color-secondary: #F8F5F0;
   --color-accent: #B45309;
   --color-accent-hover: #92400E;
   --color-muted: #E5E1DA;
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  scroll-behavior: smooth;
+  margin: 0;
+  background-color: var(--color-secondary);
+  color: var(--text-primary);
   font-family: 'Inter', sans-serif;
 }

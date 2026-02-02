@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-
 export default function Footer() {
   useEffect(() => {
     AOS.init({
@@ -16,17 +15,17 @@ export default function Footer() {
 
   return (
     <footer className="w-full">
-
-      {/* MAIN FOOTER */}
+      {/* ================= MAIN FOOTER ================= */}
       <div className="bg-[var(--color-secondary)]" data-aos="fade-up">
         <div
           className="max-w-[1600px] mx-auto
                  px-28 py-32
-                 flex justify-between items-start text-[var(--color-primary)]"
+                 flex justify-between items-start
+                 text-[var(--color-primary)]"
         >
           {/* LEFT */}
           <div className="max-w-sm">
-            <h2 className="text-[40px] font-medium mb-10 text-[var(--color-primary)]">
+            <h2 className="text-[40px] font-medium mb-10">
               Dr. Maya Reynolds, PsyD
             </h2>
 
@@ -35,13 +34,23 @@ export default function Footer() {
               Santa Monica, CA
             </p>
 
-            <a href="mailto:email@example.com" className="block underline mb-2 hover:text-[#1f3b1b]/60 transition-colors">email@example.com</a>
-            <a href="tel:5555555555" className="block underline hover:text-[#1f3b1b]/60 transition-colors">(555) 555-5555</a>
+            <a
+              href="mailto:email@example.com"
+              className="block underline mb-2 hover:text-[var(--color-accent)] transition-colors"
+            >
+              email@example.com
+            </a>
+            <a
+              href="tel:5555555555"
+              className="block underline hover:text-[var(--color-accent)] transition-colors"
+            >
+              (555) 555-5555
+            </a>
           </div>
 
           {/* CENTER */}
           <div>
-            <h3 className="text-[28px] font-medium mb-8 text-[#1f3b1b]">
+            <h3 className="text-[28px] font-medium mb-8">
               Hours
             </h3>
             <p className="mb-2">Monday – Friday</p>
@@ -50,21 +59,45 @@ export default function Footer() {
 
           {/* RIGHT */}
           <div className="text-right">
-            <h3 className="text-[28px] font-medium mb-8 text-[#1f3b1b]">
+            <h3 className="text-[28px] font-medium mb-8">
               Find
             </h3>
 
             <ul className="space-y-4 underline">
-              <li><Link href="/" className="hover:text-[#1f3b1b]/60 transition-colors">Home</Link></li>
-              <li><Link href="/contact" className="hover:text-[#1f3b1b]/60 transition-colors">Contact</Link></li>
-              <li><Link href="/blog" className="hover:text-[#1f3b1b]/60 transition-colors">Blog</Link></li>
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-[var(--color-accent)] transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-[var(--color-accent)] transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="hover:text-[var(--color-accent)] transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* BOTTOM FOOTER */}
-      <div className="bg-[var(--color-primary)] py-14 text-[var(--color-secondary)]" data-aos="fade-up">
+      {/* ================= BOTTOM FOOTER ================= */}
+      <div
+        className="bg-[var(--color-primary)] py-14 text-[var(--color-secondary)]"
+        data-aos="fade-up"
+      >
         <div className="max-w-[1600px] mx-auto px-28 text-center">
           <div className="flex justify-center gap-8 mb-6 underline text-[15px]">
             <span>Privacy & Cookies Policy</span>
@@ -83,8 +116,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
     </footer>
-
   );
 }
