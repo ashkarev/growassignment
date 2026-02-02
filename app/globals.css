@@ -2,12 +2,15 @@
 
 
 :root {
-  --color-primary: #2f3e46;
-  --color-secondary: #cad2c5;
-  --color-accent: #84a98c;
+  --color-primary: #111827;
+  --color-secondary: #F8F5F0;
+  --color-accent: #B45309;
+  --color-accent-hover: #92400E;
+  --color-muted: #E5E1DA;
 }
 
 
-body{
+body {
   scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }

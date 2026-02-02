@@ -6,33 +6,33 @@ import { useEffect } from "react";
 
 
 export default function Footer() {
-    useEffect(() => {
-      AOS.init({
-        duration: 800,
-        easing: "ease-out",
-        once: true,
-      });
-    }, []);
-    
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <footer className="w-full">
 
       {/* MAIN FOOTER */}
-      <div className="bg-[#fbf7f1] " data-aos="fade-up">
+      <div className="bg-[var(--color-secondary)]" data-aos="fade-up">
         <div
           className="max-w-[1600px] mx-auto
                  px-28 py-32
-                 flex justify-between items-start text-[#24371b]"
+                 flex justify-between items-start text-[var(--color-primary)]"
         >
           {/* LEFT */}
           <div className="max-w-sm">
-            <h2 className="text-[40px] font-medium mb-10 text-[#1f3b1b]">
-              Lilac Template
+            <h2 className="text-[40px] font-medium mb-10 text-[var(--color-primary)]">
+              Dr. Maya Reynolds, PsyD
             </h2>
 
             <p className="text-[16px] leading-7 mb-10">
-              123 Example Road <br />
-              Minneapolis, MN
+              Private practice in <br />
+              Santa Monica, CA
             </p>
 
             <a href="mailto:email@example.com" className="block underline mb-2 hover:text-[#1f3b1b]/60 transition-colors">email@example.com</a>
@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM FOOTER */}
-      <div className="bg-[#e9e5df] py-14" data-aos="fade-up">
+      <div className="bg-[var(--color-primary)] py-14 text-[var(--color-secondary)]" data-aos="fade-up">
         <div className="max-w-[1600px] mx-auto px-28 text-center">
           <div className="flex justify-center gap-8 mb-6 underline text-[15px]">
             <span>Privacy & Cookies Policy</span>
@@ -79,7 +79,7 @@ export default function Footer() {
           </p>
 
           <p className="text-[14px]">
-            All Rights Reserved © 2024 Your Business Name Here, LLC.
+            All Rights Reserved © 2026 Dr. Maya Reynolds, PsyD.
           </p>
         </div>
       </div>

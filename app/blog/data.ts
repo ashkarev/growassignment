@@ -1,30 +1,23 @@
 export const BLOGS = [
     {
-        slug: "blog-post-one",
-        title: "Blog Post One",
-        date: "3/11/19",
+        slug: "burnout-high-achieving-adults",
+        title: "Why High-Achieving Adults Struggle with Burnout (And What Actually Helps)",
+        date: "Feb 2, 2026",
         image: "/images/blog1.png",
-        content: "This is the content for blog post one. It covers various aspects of mental health and well-being. Deep dive into the first topic of our series."
+        content: "Burnout isn't just about working too much. For high-achieving adults, it's often rooted in perfectionism, fear of failure, and nervous system dysregulation. Here's what research tells us about sustainable recovery."
     },
     {
-        slug: "blog-post-two",
-        title: "Blog Post Two",
-        date: "3/11/19",
+        slug: "nervous-system-anxiety-panic",
+        title: "Understanding Your Nervous System Response to Anxiety and Panic",
+        date: "Jan 28, 2026",
         image: "/images/blog2.png",
-        content: "In our second post, we explore the importance of daily mindfulness and how it impacts your overall productivity and happiness."
+        content: "Anxiety and panic aren't signs of weakness—they're nervous system responses. Learning to recognize and regulate these responses is key to long-term relief. This post breaks down how it works."
     },
     {
-        slug: "blog-post-three",
-        title: "Blog Post Three",
-        date: "3/11/19",
+        slug: "trauma-therapy-emdr-pacing-safety",
+        title: "What to Expect from Trauma Therapy: EMDR, Pacing, and Safety",
+        date: "Jan 15, 2026",
         image: "/images/blog3.png",
-        content: "Relationships are the cornerstone of a fulfilling life. Learn how to navigate complex dynamics with empathy and boundaries."
-    },
-    {
-        slug: "blog-post-four",
-        title: "Blog Post Four",
-        date: "3/11/19",
-        image: "/images/blog4.png",
-        content: "Burnout is more common than you think. This post provides actionable steps to identify signs of burnout and how to effectively recover."
+        content: "Trauma therapy isn't about reliving the past—it's about processing it in a way that feels safe and manageable. Here's what evidence-based trauma treatment actually looks like, and why pacing matters."
     },
 ];
