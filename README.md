@@ -1,31 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Therapy Website – Homepage Clone & Redesign
 
-## Getting Started
+This project was built as part of the **Stage 2 Practical Assignment** for the **Front-End Developer Internship** at Grow My Therapy.
 
-First, run the development server:
+The task was to clone the layout and structure of a provided Squarespace therapy website and then redesign it using a new theme, copy, and imagery, while preserving the original layout and responsiveness.
+
+---
+
+## Project Overview
+
+- Accurate homepage layout clone of the reference Squarespace template  
+- Full creative redesign using a new color palette, typography, and images  
+- All copy written based on the imaginary therapist profile: **Dr. Maya Reynolds**  
+- Focus on calm, supportive, and non-clinical user experience  
+- Fully responsive across desktop and mobile  
+
+---
+
+## What’s Included
+
+- **Homepage**
+  - Hero section
+  - Services
+  - “You don’t have to do this alone” section
+  - About section
+  - FAQ section
+  - Custom **Our Office** section
+- **Blog**
+  - Blog listing page
+  - Individual blog post pages
+- **Contact Page**
+  - Reassuring, low-pressure layout
+  - Clear privacy-focused messaging
+
+---
+
+## Tech Stack
+
+- Next.js
+- Tailwind CSS
+- CSS variables for theming
+- AOS for subtle scroll animations
+
+AI tools were used thoughtfully to assist with ideation and refinement, with all final decisions reviewed and adjusted manually.
+
+---
+
+## Design Approach
+
+- Calm, grounded visual language suitable for a therapy practice
+- Editorial-style imagery (not stock-heavy)
+- Clear hierarchy, spacing, and readability
+- Copy focused on helping visitors feel understood before reaching out
+
+---
+
+## Running the Project Locally
 
 ```bash
+npm install
 npm run dev
-
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
