@@ -22,7 +22,11 @@ export default function Home() {
       <section className="min-h-screen flex items-center px-6 bg-[var(--color-secondary)]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 w-full">
           <div className="flex justify-center md:justify-start">
-            <div className="bg-[var(--color-muted)] w-full max-w-md h-[480px] rounded-[240px]" />
+            <img
+              src="/images/hero_corner.png"
+              alt="Calm therapy office corner"
+              className="w-full max-w-md h-[480px] rounded-[240px] object-cover"
+            />
           </div>
 
           <div className="flex flex-col justify-center">
@@ -88,7 +92,13 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="w-full md:w-1/2 bg-[var(--color-muted)]" />
+        <div className="w-full md:w-1/2 bg-[var(--color-muted)] relative overflow-hidden">
+          <img
+            src="/images/philosophy_bg.png"
+            alt="Peaceful therapy office interior"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </section>
 
       {/* ================= SECTION 3 (SERVICES) ================= */}
@@ -98,46 +108,62 @@ export default function Home() {
             Therapy Services for Adults in Santa Monica
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Anxiety and Panic Therapy",
-                desc:
-                  "Support for generalized anxiety, panic attacks, and chronic worry using CBT and mindfulness-based approaches.",
-              },
-              {
-                title: "Trauma Therapy",
-                desc:
-                  "EMDR and body-oriented techniques to process trauma and rebuild safety with care and pacing.",
-              },
-              {
-                title: "Burnout and Perfectionism Therapy",
-                desc:
-                  "Helping high-achieving adults address burnout, perfectionism, and internal pressure sustainably.",
-              },
-            ].map((service, i) => (
-              <div
-                key={i}
-                className="bg-[var(--color-secondary)] border border-[var(--color-muted)] px-12 py-10 flex flex-col"
-              >
-                <h3 className="text-[22px] mb-5 text-[var(--color-primary)] font-extrabold">
-                  {service.title}
-                </h3>
-                <p className="text-[16px] mb-8 text-[var(--text-secondary)]">
-                  {service.desc}
-                </p>
-                <div className="flex justify-center mt-auto">
-                  <div className="w-[200px] h-[200px] rounded-full bg-[var(--color-muted)]" />
-                </div>
-              </div>
-            ))}
-          </div>
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  {[
+    {
+      title: "Anxiety and Panic Therapy",
+      desc:
+        "Support for generalized anxiety, panic attacks, and chronic worry using CBT and mindfulness-based approaches.",
+      img: "/images/T1.jpg",
+    },
+    {
+      title: "Trauma Therapy",
+      desc:
+        "EMDR and body-oriented techniques to process trauma and rebuild safety with care and pacing.",
+      img: "/images/T2.jpg",
+    },
+    {
+      title: "Burnout and Perfectionism Therapy",
+      desc:
+        "Helping high-achieving adults address burnout, perfectionism, and internal pressure sustainably.",
+      img: "/images/T3.jpg",
+    },
+  ].map((service, i) => (
+    <div
+      key={i}
+      className="bg-[var(--color-secondary)] border border-[var(--color-muted)] px-12 py-10 flex flex-col"
+    >
+      <h3 className="text-[22px] mb-5 text-[var(--color-primary)] font-extrabold">
+        {service.title}
+      </h3>
+
+      <p className="text-[16px] mb-8 text-[var(--text-secondary)]">
+        {service.desc}
+      </p>
+
+      <div className="flex justify-center mt-auto">
+        <img
+          src={service.img}
+          alt={service.title}
+          className="w-[200px] h-[200px] rounded-full object-cover"
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </section>
 
       {/* ================= SECTION 4 ================= */}
       <section className="min-h-screen flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 bg-[var(--color-muted)]" />
+        <div className="w-full md:w-1/2 bg-[var(--color-muted)] relative overflow-hidden">
+          <img
+            src="/images/TD1.jpg"
+            alt="Calm therapy environment"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
         <div className="w-full md:w-1/2 bg-[var(--color-secondary)] flex flex-col px-8 md:px-20 pt-24">
           <h2 className="text-[36px] md:text-[56px] mb-10 text-[var(--color-primary)] font-extrabold">
@@ -156,7 +182,7 @@ export default function Home() {
             <Link
               href="/contact"
               className="block w-full py-6 text-center text-[13px] tracking-widest
-                text-[var(--color-primary)] hover:bg-[var(--color-accent)]
+                text-[var(--color-primary)] bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)]
                 hover:text-white transition-colors"
             >
               GET IN TOUCH →
@@ -168,45 +194,61 @@ export default function Home() {
       {/* ================= SECTION 5 (ABOUT) ================= */}
       <section className="bg-[var(--color-secondary)] min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 px-8 md:px-20">
+
+          {/* LEFT CONTENT */}
           <div className="pt-32">
             <h2 className="text-[40px] md:text-[56px] mb-10 text-[var(--color-primary)] font-extrabold">
               About Dr. Maya Reynolds
             </h2>
-            <p className="text-[18px] mb-8 max-w-md text-[var(--text-secondary)] leading-relaxed">
-              Licensed clinical psychologist based in Santa Monica, specializing
-              in anxiety, trauma, and burnout therapy for adults.
+
+            <p className="text-[18px] mb-8 max-w-md text-[var(--color-primary)] leading-relaxed">
+              I’m a licensed clinical psychologist based in Santa Monica, California,
+              specializing in anxiety, trauma, and burnout therapy for adults.
             </p>
-            <p className="text-[18px] mb-14 max-w-md text-[var(--text-secondary)] leading-relaxed">
-              My work integrates CBT, EMDR, mindfulness-based practices, and
+
+            <p className="text-[18px] mb-8 max-w-md text-[var(--color-primary)] leading-relaxed">
+              My work integrates evidence-based approaches including Cognitive
+              Behavioral Therapy (CBT), EMDR, mindfulness-based practices, and
               body-oriented techniques in a collaborative, safety-focused way.
             </p>
-            <p className="text-[18px] mb-14 max-w-md text-[var(--text-secondary)] leading-relaxed">
-              I offer in-person therapy at my Santa Monica office and secure
-              telehealth sessions across California.
+
+            <p className="text-[18px] mb-14 max-w-md text-[var(--color-primary)] leading-relaxed">
+              I offer in-person therapy at my Santa Monica office and secure telehealth
+              sessions for clients throughout California.
             </p>
+
             <Link
               href="/contact"
               className="bg-[var(--color-accent)] text-white px-10 py-4 text-[13px]
-                tracking-widest hover:bg-[var(--color-accent-hover)] rounded transition"
+        tracking-widest hover:bg-[var(--color-accent-hover)] rounded transition"
             >
               Contact Me →
             </Link>
           </div>
 
-          <div className="relative flex justify-center md:justify-end">
-            <div className="w-[320px] md:w-[420px] h-[520px] md:h-[620px] rounded-t-full bg-[var(--color-muted)]" />
-            <div className="hidden md:block absolute bottom-[-40px] right-[-40px]
-              w-[240px] h-[240px] rounded-full bg-[var(--color-secondary)]
-              border-8 border-[var(--color-secondary)]" />
+          {/* RIGHT IMAGE — ONLY THIS, NOTHING ELSE */}
+          <div className="flex justify-center md:justify-end">
+            <img
+              src="/images/Maya.png"
+              alt="Dr. Maya Reynolds, Clinical Psychologist"
+              className="w-[320px] md:w-[420px] h-[520px] md:h-[620px] rounded-t-full object-cover"
+            />
           </div>
+
         </div>
       </section>
+
+
 
       {/* ================= SECTION 6 (FAQ) ================= */}
       <section className="bg-[var(--color-secondary)] py-28">
         <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-[48%_52%] gap-8 px-6 md:px-24">
           <div className="flex justify-center md:justify-end">
-            <div className="w-[360px] md:w-[560px] h-[520px] md:h-[720px] rounded-[320px] bg-[var(--color-muted)]" />
+            <img
+              src="/images/FQ.jpg"
+              alt="Therapy office window corner"
+              className="w-[360px] md:w-[560px] h-[520px] md:h-[720px] rounded-[320px] object-cover"
+            />
           </div>
 
           <div>
@@ -258,9 +300,8 @@ export default function Home() {
                   </span>
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-700 ${
-                    open === i ? "max-h-[250px]" : "max-h-0"
-                  }`}
+                  className={`overflow-hidden transition-all duration-700 ${open === i ? "max-h-[250px]" : "max-h-0"
+                    }`}
                 >
                   <p className="pl-[64px] pb-10 text-[16px] leading-relaxed max-w-3xl text-[var(--text-secondary)]">
                     {item.a}
@@ -293,8 +334,18 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="w-full h-[360px] bg-[var(--color-muted)] rounded-xl" />
-            <div className="w-full h-[360px] bg-[var(--color-muted)] rounded-xl" />
+            <img
+              src="/images/office1.jpeg"
+              alt="Calm therapy office environment in Santa Monica"
+              className="w-full h-full object-cover"
+            />
+
+            <img
+              src="/images/office2.jpeg"
+              alt="Calm therapy office environment in Santa Monica"
+              className="w-full h-full object-cover"
+            />
+
           </div>
         </div>
       </section>

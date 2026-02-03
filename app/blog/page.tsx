@@ -25,9 +25,14 @@ export default function BlogPage() {
             data-aos="fade-up"
           >
             {/* LEFT IMAGE */}
-            <div className="flex justify-center md:justify-start">
-              <div className="w-[340px] md:w-[420px] h-[520px] md:h-[620px] rounded-t-full bg-[var(--color-muted)]" />
-            </div>
+          <div className="relative w-[340px] md:w-[420px] h-[520px] md:h-[620px] rounded-t-full overflow-hidden">
+  <img
+    src="/images/r.jpg"
+    alt="Calm therapeutic imagery"
+    className="w-full h-full object-cover"
+  />
+</div>
+
 
             {/* RIGHT CONTENT */}
             <div className="text-[var(--color-primary)]">
